@@ -11,17 +11,25 @@
     <title key="title"></title>
   </head>
   <body>
-    <div id="output" class="Hello" title="test" style="background: red"></div>
+    <h1>Hello from lesson_10</h1>
     <script>
-      let someBlock = document.getElementById("output");
-      let name = prompt("Enter name", ""); // string
-      let i = 0;
-      while (name !== null) {
-        name = prompt("Enter name", ""); // string
-        console.log(someBlock.innerHTML);
-        someBlock.innerHTML = someBlock.innerHTML + "<h2>" + name + "</h2>";
+      let word = prompt("Enter word");
+      let vowelCount = 0;
+      for (let i = 0; i < word.length; i++) {
+        const char = word[i].toLowerCase();
+        if (
+          char === "a" ||
+          char === "e" ||
+          char === "u" ||
+          char === "y" ||
+          char === "o" ||
+          char === "i"
+        ) {
+          vowelCount++;
+        }
       }
-      console.log("END");
+
+      console.log(vowelCount);
     </script>
   </body>
 </html>
