@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  display: flex;
+
+  &__block {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background: green;
+    border: 5px solid white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    &:nth-child(1) {
+      transform: translateX(0);
+    }
+    &:nth-child(2) {
+      transform: translateX(-100%);
+    }
+    &:nth-child(3) {
+      transform: translateX(-200%);
+    }
+    &:nth-child(4) {
+      transform: translateX(-300%);
+    }
+  }
+}
+.next {
+  background-color: coral;
+}
+.prev {
+  background-color: yellowgreen;
+}
+.active {
+  border: 5px solid black;
+  opacity: 1;
+  visibility: visible;
+}

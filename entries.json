@@ -28,5 +28,14 @@
   ],
   "lesson_13": [
     "./src/lesson_13/lesson_13.js"
+  ],
+  "homework_13": [
+    "./src/homework_13/homework_13.js"
+  ],
+  "lesson_14": [
+    "./src/lesson_14/lesson_14.js"
+  ],
+  "lesson_15": [
+    "./src/lesson_15/lesson_15.js"
   ]
 }
